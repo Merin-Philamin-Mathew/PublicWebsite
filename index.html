@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap-sample</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar bg-header fixed-top navbar-expand-md px-5  navbar-light ">
+    <div class="conatiner-xxl ">
+      <a href="#intro" class="navbar-brand">
+        <span class="fw-bold text-seconday">
+          <i class="bi bi-book-half"></i>
+          Net Ninja Pro - the Book
+        </span>
+      </a>
+    </div>
+    <!-- toggle button for mobile nav -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+      aria-controls="main-nav" aria-expanded="false" aria-label="toggle-anvigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- navbar links -->
+    <div class="collapse navbar-collapse text-center justify-content-end align-items-top" id="main-nav">
+      <ul class="navbar-nav text-end mt-2 ">
+        <li class="nav-item ">
+          <a href="#topics" class="nav-link">About The Book</a>
+        </li>
+        <li class="nav-item">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Get in Touch</a>
+        </li>
+        <li class="nav-item d-md-none">
+          <a href="#" class="nav-link">Pricing</a>
+        </li>
+        <li class="nav-item ms-2 d-none d-md-inline">
+          <a href="#" class="btn btn-secondary">Buy now</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- main image & intro text -->
+  <section id="intro">
+    <div class="container-lg mt-5">
+      <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-md-5 text-center text-md-start">
+          <h1>
+            <div class="display-2">Black-Belt</div>
+            <div class="display-5 text-muted">Your coding skills</div>
+          </h1>
+          <p class="lead my-4 text-muted">Get ready to embark on a rewarding journey of learning, problem-solving, and
+            unleashing your creativity through code. Let's begin!</p>
+          <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+          <!-- open sidebar / offcanvas -->
+          <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+            Explore my other books
+          </a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <!-- tooltip -->
+          <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
+            <img src="assets/ebook-cover.png" alt="e-boo" class="img-fluid mt-5">
+          </span>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- pricing plans -->
+  <section class="bg-light mt-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Pricing plans</h2>
+        <p class="lead text-muted">Choose a pricing plan to suit your interest</p>
+      </div>
+
+      <div class="row my-5 align-items-center justify-content-center g-0">
+
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Started Edition</h4>
+              <p class="lead card-subtitle">eBook download only</p>
+              <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+              <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</p>
+              <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-9 col-lg-4">
+          <div class="card border-primary border-2">
+            <div class="card-header text-center text-primary">Most Popular</div>
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Complete Edition</h4>
+              <p class="lead card-subtitle">eBook download only</p>
+              <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
+              <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</p>
+              <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Ultimate Edition</h4>
+              <p class="lead card-subtitle">download, updates & extras</p>
+              <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+              <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.</p>
+              <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- topics of glance -->
+
+  <section id="topics">
+    <div class="container-md">
+      <!-- center text -->
+      <div class="text-center">
+        <h2>Inside the Book</h2>
+        <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+      </div>
+      <!-- grid -->
+      <div class="row my-5 g-5 justify-content-around align-items-center">
+        <!-- img-div -->
+        <div class="col-6 col-lg-4">
+          <img src="assets/kindle.png" class="img-fluid" alt="ebook">
+        </div>
+        <!-- acc-div  -->
+        <div class="col-lg-6">
+          <!-- accordion -->
+          <div class="accordion" id="chapters">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1"
+                  aria-expanded="true" aria-controls="chapter-1">
+                  Chapter 1: The World of Coding
+                </button>
+              </h2>
+              <div id="chapter-1" class="accordion-collapse collapse" aria-labelledby="heading-1"
+                data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>
+                    Introduction to coding and its relevance in today's digital age. Exploring programming, scripting,
+                    and markup languages. Setting up your coding environment for effective learning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-2">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2"
+                  aria-expanded="true" aria-controls="chapter-2">
+                  Chapter 2: Programming Fundamentals
+                </button>
+              </h2>
+              <div id="chapter-2" class="accordion-collapse collapse " aria-labelledby="heading-2"
+                data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>Core programming concepts: algorithms, variables, data types, and operators. Understanding control
+                    structures: loops and conditional statements. Modular programming and the importance of functions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-3">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3"
+                  aria-expanded="true" aria-controls="chapter-1">
+                  Chapter 3: Programming Languages
+                </button>
+              </h2>
+              <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-1"
+                data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>Overview of popular programming languages like Python, Java, JavaScript, and more. Choosing the
+                    right language based on your goals and project requirements. Setting up development environments for
+                    specific programming languages</p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-4">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4"
+                  aria-expanded="true" aria-controls="chapter-1">
+                  Chapter 4: Web Development Essentials
+                </button>
+              </h2>
+              <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-1"
+                data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>Basics of web development: HTML for structure and CSS for styling. Hands-on experience in creating
+                    a static webpage from scratch. Introduction to web interactivity using JavaScript.</p>
+
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading-5">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5"
+                  aria-expanded="true" aria-controls="chapter-1">
+                  Chapter 5: Advanced Coding Techniques
+                </button>
+              </h2>
+              <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-1"
+                data-bs-parent="#chapters">
+                <div class="accordion-body">
+                  <p>Handling user input and form validation in web applications. Delving into Object-Oriented
+                    Programming (OOP) principles. Extending functionality with libraries, frameworks, and APIs.
+                    Collaborative coding and version control with Git and GitHub.</p>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
+          </div>
+          <!--  -->
+        </div>
+      </div><!-- grid closing -->
+    </div>
+  </section>
+
+  <!-- reviews list -->
+  <section id="reviews">
+    <div class="container-lg">
+
+      <div class="text-center">
+        <h1><i class="bi bi-stars"></i>Book Reviews </h1>
+        <p class="lead">What my students have said about the book....</p>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-8">
+          <div class="list-group ">
+            <div class="list-group-item py-3 bg-dark text-light">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+              <p class="mb-1">I've tried several coding books, but this eBook stands out. The concepts are broken down
+                into manageable chunks, making it easy to grasp even the most complex topics. Highly recommended for
+                beginners and experienced coders alike</small>
+            </div>
+            <div class="list-group-item py-3 bg-dark text-light">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1"> Comprehensive and User-Friendly</h5>
+              <p class="mb-1">I appreciate how comprehensive this eBook is. It covers a wide range of topics and
+                provides clear explanations. The user-friendly format, with code snippets and exercises, makes it a
+                valuable resource for both beginners and those looking to expand their coding skills.</small>
+            </div>
+            <div class="list-group-item py-3 bg-dark text-light">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1"> Room for Improvement</h5>
+              <p class="mb-1">While this eBook has its merits, I believe there's room for improvement. Some sections
+                felt rushed, and a deeper dive into complex topics would have been beneficial. However, it's a decent
+                starting point for those new to coding</small>
+            </div>
+            <div class="list-group-item py-3 bg-dark text-light">
+              <div class="pb-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1"> Good for the Basics</h5>
+              <p class="mb-1 ">I found this coding eBook to be decent. It covers the fundamentals reasonably well, but
+                it could have provided more in-depth explanations on some topics. The examples were helpful, but I
+                wished for more real-world projects to practice with. Overall, it's an okay resource for beginners, but
+                more experienced coders might need additional references.</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!--contact forms -->
+  <!-- form-control, form-label, form-select, input-group, input-group-text -->
+  <section id="contact">
+    <div class="container-lg">
+
+      <div class="text-center">
+        <h2>Get in Touch</h2>
+        <p class="lead">Questions to ask? Fill out the google form to contact directly...</p>
+      </div>
+
+      <div class="row justify-content-center my-5">
+
+        <div class="col-lg-6">
+          <form action="" id="submit-form" role="submit-form" class="">
+            <label for="email" class="form-label">Email address:</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-envelope-fill"></i>
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+              <!-- tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
+            </div>
+
+            <label for="name" class="form-label">Name:</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-chat-right-dots-fill"></i>
+              </span>
+              <input type="name" class="form-control" id="email" placeholder="Enter your name">
+              <!-- tooltip -->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                  <i class="bi bi-question-circle text-muted"></i>
+                </span>
+              </span>
+            </div>
+            
+            <label for="subject" class="form-label">What is your question about?</label>
+            <div class="input-group mb-4">
+              <span class="input-group-text">
+                <i class="bi bi-person-fill"></i>
+              </span>
+              <select class="form-select" id="subject">
+                <option value="pricing" selected>Pricing query</option>
+                <option value="content">Content query</option>
+                <option value="other">Other query</option>
+              </select>
+            </div>
+            
+            <div class="form-floating form-group mt-5">
+              <textarea class="form-control" id="query" style="height: 140px;"></textarea>
+              <label for="query"> Your query...</label>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="mb-4 mt-1 text-center">
+        <button class="btn btn-secondary" type="submit">Submit</button>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- get updates / modal trigger -->
+  <section class="bg-light m-5">
+    <div class="container">
+      <div class="text-center">
+        <h2>Stay in The loop</h2>
+        <p class="lead">Get the latest updates as they happen...</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="text-muted my-4">
+            With our timely updates, you'll always be ahead of the curve. Don't wait—join our community of informed individuals today and be part of the conversation.
+
+Stay connected, stay informed, and get the latest updates as they happen!"
+          </p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+            Registration for updates
+          </button>
+        </div>
+      </div>
+         
+    </div>
+  </section>
+  <!-- modal itself -->
+  <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title">Get the latest Updates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Thank you for considering reaching out. We appreciate your interest and look forward to engaging with you.
+          </p>
+          <label for="modal-email" class="form-label">Your email address</label>
+          <input type="text" class="form-control" id="modal-email" placeholder="Enter your mail">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header bg-dark text-white">
+      <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+      <button type="button" class="btn-close bg-header" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body ">
+      <div class="mb-3">
+        <h4>CodeCraft: Mastering the Art of Programming</h4>
+        <p class=" bg-light ps-2 text-muted" >Dive into the world of programming mastery with "CodeCraft." This comprehensive guide takes you from the basics to advanced coding techniques. Learn how to craft efficient algorithms, optimize code, and create elegant solutions to complex problems. Perfect for both beginners and experienced programmers seeking to refine their skills.
+          <a href="" id="learnmore" onclick="return confirm_alert(this)" >learn more</a>
+        </p>
+      </div>
+      <div class="mb-3">
+        <h4>Web Wizardry: A Practical Guide to Web Development</h4>
+        <p class=" bg-light ps-2 text-muted" >"Web Wizardry" is your ultimate companion to becoming a web development wizard. Explore HTML, CSS, JavaScript, and more as you embark on a journey to create stunning web experiences. Whether you're a beginner or a pro, this book empowers you with the skills needed to craft interactive, responsive, and visually appealing websites.
+          <a href="" id="learnmore" onclick="return confirm_alert(this)">learn more</a>
+        </p>
+      </div>
+      <div class="mb-3">
+        <h4>Data Alchemy: Unveiling the Secrets of Data Science</h4>
+        <p class=" bg-light ps-2 text-muted" >DUnlock the magic of data science with "Data Alchemy." This book demystifies the world of data, offering insights into data analysis, machine learning, and predictive modeling. Discover how to transform raw data into actionable insights, make data-driven decisions, and harness the power of AI. Ideal for aspiring data scientists and analysts.
+          <a href="" id="learnmore" onclick="return confirm_alert(this)">learn more</a>
+        </p>
+      </div>
+      <div class="mb-3">
+        <h4>CodeCraft: Mastering the Art of Programming</h4>
+        <p class=" bg-light ps-2 text-muted" >Dive into the world of programming mastery with "CodeCraft." This comprehensive guide takes you from the basics to advanced coding techniques. Learn how to craft efficient algorithms, optimize code, and create elegant solutions to complex problems. Perfect for both beginners and experienced programmers seeking to refine their skills.
+          <a href="" id="learnmore" onclick="return confirm_alert(this)">learn more</a>
+        </p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- fore-contol -->
+
+  <script src="script.js"></script>
+
+ 
+
+</body>
+
+</html>
